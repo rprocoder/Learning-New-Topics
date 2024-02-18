@@ -5,7 +5,7 @@ from .models import User
 
 class UserAdmin(UserAdmin):
     # You can customize the fields displayed in the admin panel
-    list_display = ('email', 'username', 'first_name', 'last_name', 'is_staff','bio','birth_date')
+    list_display = ('username', 'is_staff','bio','birth_date')
 
 # Register your custom user model with the custom admin class
 admin.site.register(User, UserAdmin)
